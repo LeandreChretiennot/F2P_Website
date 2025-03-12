@@ -23,12 +23,12 @@ function App() {
 			<Routes>
 				{/* {!loggedInId ? 
 				<>
-					<Route path="/f2p" element={<LoginMain Login={Login} login={true} />}/>
-					<Route path="/f2p/register" element={<LoginMain Login={Login} login={false} />}/>
+					<Route path="/F2P_Website" element={<LoginMain Login={Login} login={true} />}/>
+					<Route path="/F2P_Website/register" element={<LoginMain Login={Login} login={false} />}/>
 				</>
 				: */}
 				<>
-					<Route path="/f2p" element={<HomeMain loggedInAccount={loggedInAccount} disconnect={Disconnect} />}/>
+					<Route path="/F2P_Website" element={<HomeMain loggedInAccount={loggedInAccount} disconnect={Disconnect} />}/>
 				</>
 				{/* } */}
 				<Route path="*" element={<Navigate replace to="/" />} />
