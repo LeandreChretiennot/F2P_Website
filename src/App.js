@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import LoginMain from './Components/Login/Main'
+import HomeMain from './Components/Home/Main'
+import { Navigate, Route, Routes } from 'react-router';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [loggedInId, SetLoggedInId] = useState(null)
+	const [loggedInAccount, SetLoggedInAccount] = useState(null)
+
+	const Login = (accountData) => {
+		SetLoggedInId(accountData.Id)
+		SetLoggedInAccount(accountData)
+	}
+
+	const Disconnect = () => {
+		SetLoggedInId(null);
+		SetLoggedInAccount(null);
+	}
+  
+	return (
+		<>
+			<Routes>
+				{/* {!loggedInId ? 
+				<>
+					<Route path="/" element={<LoginMain Login={Login} login={true} />}/>
+					<Route path="/register" element={<LoginMain Login={Login} login={false} />}/>
+				</>
+				: */}
+				<>
+					<Route path="/" element={<HomeMain loggedInAccount={loggedInAccount} disconnect={Disconnect} />}/>
+				</>
+				{/* } */}
+				<Route path="*" element={<Navigate replace to="/" />} />
+			</Routes>
+		</>
+	);
 }
 
 export default App;

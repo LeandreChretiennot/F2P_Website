@@ -1,0 +1,40 @@
+#home_left {
+    width: 60%;
+    height: 100%;
+}
+#my_game {
+    background-color: green;
+    width: 40%;
+    height: 100%;
+}
+#account {
+    background-color: red;
+    height: 60%;
+}
+#game_info {
+    background-color: blue;
+    height: 40%;
+}
+
+.flex_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+.flex_grow_2 {
+    flex-grow: 2;
+}
+.flex_grow_3 {
+    flex-grow: 3;
+}
+.scrollbox {
+    overflow: auto;
+}

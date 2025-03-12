@@ -1,0 +1,16 @@
+.scrollbox {
+    padding: 5%;
+}
+#account_infos {
+    width: 40%;
+}
+#account_games {
+    width: 60%;
+}
+#account_settings {
+    height: 30%;
+    min-height: 85px
+}
+#account_expenses {
+    height: 70%;
+}
