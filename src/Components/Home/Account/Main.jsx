@@ -2,7 +2,7 @@ import "./Account.css"
 
 export default function Main(props) {
     const Test = async () => {
-        let url = "http://188.165.34.134:36001/databasesapi/API/read.php?ext=utilisateurs";
+        let url = "https://ftpapiacces.altsproduction.ovh/databasesapi/API/read.php?ext=utilisateurs";
         try {
             const response = await fetch(url, {
                 method: "GET",

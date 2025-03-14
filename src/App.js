@@ -31,7 +31,7 @@ function App() {
 					<Route path="/F2P_Website" element={<HomeMain loggedInAccount={loggedInAccount} disconnect={Disconnect} />}/>
 				</>
 				{/* } */}
-				<Route path="*" element={<Navigate replace to="/" />} />
+				<Route path="*" element={<Navigate replace to="/F2P_Website" />} />
 			</Routes>
 		</>
 	);
