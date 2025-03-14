@@ -2,7 +2,7 @@ import "./Account.css"
 
 export default function Main(props) {
     const Test = async () => {
-        let url = "https://ftpapiacces.altsproduction.ovh/databasesapi/API/read.php?ext=utilisateurs";
+        let url = "https://cors-anywhere.herokuapp.com/https://ftpapiacces.altsproduction.ovh/databasesapi/API/read.php?ext=utilisateurs";
         try {
             const response = await fetch(url, {
                 method: "GET",
