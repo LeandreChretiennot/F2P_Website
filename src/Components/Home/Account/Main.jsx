@@ -6,7 +6,10 @@ export default function Main(props) {
         try {
             const response = await fetch(url, {
                 method: "GET",
-                mode: "cors"
+                mode: "cors",
+                headers: {
+                    "Access-Control-Allow-Origin": "*"
+                }
             });
             if (!response.ok) {
                 console.error(response)
