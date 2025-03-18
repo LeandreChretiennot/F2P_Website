@@ -30,8 +30,8 @@ export default function Main(props) {
                 <div id="account_infos" className="flex_col">
                     <div id="account_settings">
                         <p>Name</p>
-                        <button onClick={() => Test("https://ftpapiacces.altsproduction.ovh/databasesapi/API/read.php?ext=utilisateurs")}>Account settings</button>
-                        <button onClick={() => Test("https://cors-anywhere.herokuapp.com/https://ftpapiacces.altsproduction.ovh/databasesapi/API/read.php?ext=utilisateurs")}>CORS anywhere</button>
+                        <button onClick={() => Test("https://ftpapiacces.altsproduction.ovh/databasesapi/API/read.php?ext=utilisateurs")}>utilisateurs</button>
+                        <button onClick={() => Test("https://ftpapiacces.altsproduction.ovh/databasesapi/index.html")}>Index.html</button>
                     </div>
                     <div id="account_expenses" className="scrollbox"></div>
                 </div>
